@@ -1,0 +1,155 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lugares</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/style.css" rel="stylesheet" />
+    </head>
+    
+    <body class="bambu">
+      
+    <div class="colIzq">
+
+            <ul>
+              <li><a class="active" href="#home" >Inicio</a></li>  
+              <li><a href="index.html" target="_self">Home</a></li>
+              <li><a href="novedades/index.html" >Novedades</a></li>
+              <li><a href="contacto/index.html">Contacto</a></li>
+              <li><a href="acerca/index.html">Acerca de...</a></li>
+            </ul>
+        
+            <div class="gallery">
+                <a  href="glaciares/index.html" target="_self">
+                  <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Feglaciar.jpg?1495463174481" alt="Glaciares" width="300" height="200">
+              </a>
+              <div class="desc">Una buena opción son los glaciares</div>
+            </div>
+
+            <div class="gallery">
+                <a  href="mar/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Femar.jpg?1495463179901" alt="El Mar" width="300" height="200">
+               </a>
+              <div class="desc">Entre todas las variables, el mar</div>
+            </div>
+        
+            <div class="gallery">
+                <a  href="noche/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Fepub.jpg?1495463213536" alt="Pubs" width="300" height="200">
+              </a>
+              <div class="desc">No descartemos la actividad nocturna </div>
+            </div>
+ 
+            <div class="gallery">
+                <a target="_self" href="civilizaciones/index.html">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Feruinas.jpg?1495463189692" alt="Ruinas" width="300" height="200">
+              </a>
+              <div class="desc">Apasionantes visitas a restos de civilizaciones</div>
+            </div>
+
+            <div class="gallery">
+                <a href="bosques/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Febosques.jpg?1495463173018" alt="Bosques" width="300" height="200">
+              </a>
+              <div class="desc">Indescriptibles sensaciones en caminatas por bosques</div>
+            </div>
+           
+            <div class="gallery">
+                <a  href="montana/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Femontana.jpg?1495463178344" alt="Montaña" width="300" height="200">
+              </a>
+              <div class="desc">Toda la adrenalina en las múltiples actividades andinas</div>
+            </div>
+        
+            <div class="gallery">
+                <a  href="rurales/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Fellanura.jpg?1495463176357" alt="La llanura pampeana" width="300" height="200">
+              </a>
+              <div class="desc">Clasicos paseos argentinos con buena gastronomía local</div>
+            </div>
+            
+            <div class="gallery">
+                <a  href="espectaculos/index.html" target="_self">
+                    <img src="https://cdn.glitch.com/a691d5a4-c3d2-4d7a-9d60-87a4d2d39a69%2Feteatro.JPG?1495463217613" alt="Arte y cultura" width="300" height="200">
+              </a>
+              <div class="desc">La variedad de propuestas culturales y artísticas</div>
+            </div>
+           
+        
+    </div>  <!-- cierra colIzq  -->
+    
+    <div class="colDer">
+        
+        <div class="boxLogin">
+                <div id="loginOK">
+                </div>
+        </div>
+        
+            <div id="contUser">
+                    <div id="etuser">
+                        usuario
+                    </div>
+
+                    <div id="etpass">
+                        contraseña
+                    </div>
+              
+                        <input type="text"  id="user" />
+                         <input type="text" id="pass" />
+
+                    <div id="botPresAqui">
+                        <input type="button" 
+                               value="PresioneAqui" 
+                               onclick="FUNCIONES.validarUser();" />
+                    </div>
+            </div>   <!-- cierra contUser  -->
+
+
+                <div id="comentarios"> 
+                        <br>
+                    <h2>
+                        Panel lateral 
+                    </h2>
+
+                    <div id="loginError">
+
+                    </div>                        
+                        
+                </div>   <!-- cierra comentarios  -->
+            
+    </div>   <!-- cierra colDer  -->
+    
+    <div class="encab">
+        Lugares
+    </div>
+    
+
+    
+        <footer class="footer"> 
+          <div id="visitantes" >
+          </div>
+            
+            <div id="etVisitantes">
+                       cantidad de visistas
+            </div>
+              
+
+           
+          
+             Aukin Co - Los Coihues - Todos los derechos reservados
+         </footer>
+
+    
+    <script src="/js/prog.js"></script>
+    
+    </body>
+</html>
