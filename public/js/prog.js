@@ -11,7 +11,7 @@ FUNCIONES.validarUser = function ()
     var usuarioElem = document.querySelector("#user");  
     var passElem = document.querySelector("#pass");
     
-    var loginOKelem = document.querySelector("#loginOK"); 
+    var loginOKelem = document.querySelector("#comentarios"); 
     var loginErroresElem = document.querySelector("#loginError"); 
     
     var visitantesElem = document.querySelector("#visitantes");
@@ -32,7 +32,30 @@ FUNCIONES.validarUser = function ()
             loginErroresElem.innerHTML += "la contraseña o el usuario son incorrectos";  
 
     }
-            
- /**                         alert("PRUEBA: pasa por false");     */   
 
 };
+
+FUNCIONES.cargarhtml = function (laurl)
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", laurl);
+    xhr.onreadystatechange = function () {
+        if( xhr.readyState === 4 ){
+            if( xhr.status === 200 ){
+                //alert( xhr.responseText );
+                var panelito = document.querySelector("#contajax");
+                panelito.innerHTML = xhr.responseText;
+             /// PANEL_MENSAJES
+        }else{
+            var panelito = document.querySelector("#contajax");
+            panelito.innerHTML = "Error" ; 
+                }
+            }
+        };
+
+
+        xhr.send();
+ };         
+
+
+
